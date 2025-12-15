@@ -1,0 +1,15 @@
+@import "https://devops.vitality.co.uk/designsystem/assets/css/main.css";
+
+html {
+    background-color: #eaeff4;
+    margin: 0 auto;
+    max-width: 144rem;
+    padding: 2.4rem;
+}
+
+.vds-button {
+    box-sizing: border-box;
+    min-width: 100% !important;
+    margin-right: unset !important;
+    margin-bottom: unset !important;
+}

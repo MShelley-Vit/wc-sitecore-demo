@@ -1,0 +1,8 @@
+@import "https://devops.vitality.co.uk/designsystem/assets/css/main.css";
+
+.vds-button {
+    box-sizing: border-box;
+    min-width: 100% !important;
+    margin-right: unset !important;
+    margin-bottom: unset !important;
+}

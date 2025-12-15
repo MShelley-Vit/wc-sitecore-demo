@@ -1,0 +1,9 @@
+{
+  "name": "wc-sitecore-demo",
+  "version": "1.0.0",
+  "description": "This repository has been created for the Sitecore demo which includes a Card Web Component.",
+  "keywords": [],
+  "author": "FED Team",
+  "license": "ISC",
+  "files": ["dist"]
+}
