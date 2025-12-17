@@ -1,0 +1,53 @@
+const template = `
+{{!-- HTML goes here --}}
+`;
+
+const css = new CSSStyleSheet();
+css.replaceSync(`
+    {{!-- CSS goes here --}}
+`);
+
+const fragment = (() => {
+    const t = document.createElement("template");
+    t.innerHTML = template;
+    return document.adoptNode(t.content);
+})();
+
+/**
+* {{ name }} <vit-{{dashCase name}}>
+* 
+* @summary {{ description }}
+* @since version number here..
+* @status add status..
+* 
+* @documentation link to documentation goes here...
+*
+* @link {{ figma-link }}
+* 
+* @property {type} properyName - any properties used...
+* 
+* @attribute {type} attributeName - any attributes used..
+* 
+* @event eventName - event info goes here...
+* 
+*/
+export class {{ pascalCase name }} extends HTMLElement {
+    static observedAttributes = [];
+    
+    constructor() {
+        super()
+            .attachShadow({ mode: "open" })
+            .append(
+                fragment.cloneNode(true)
+            );
+            this.shadowRoot.adoptedStyleSheets = [css];
+    }
+
+    connectedCallback() {
+        
+    }
+
+    attributeChangedCallback(name, oldValue, newValue) {
+        
+    }
+}
